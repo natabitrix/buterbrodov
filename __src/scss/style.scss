@@ -1,0 +1,89 @@
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+
+}
+
+.container{
+    max-width: 940px!important;
+    position: relative;
+}
+
+.animations {
+    position: absolute;
+    .cow, .logo, .leg {
+        animation-direction: linear;
+        animation-timing-function: linear;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+    .cow {
+        position: absolute;
+        left: 15px;
+        top: 0px;
+        //animation-name: move1;
+
+    }
+    .logo {
+        position: absolute;
+        left: 118px;
+        top: 15px;
+        transform: translate(0px, 0px);
+        //animation-name: move2;
+    }
+    .leg {
+        transform-origin: center;
+        animation-iteration-count: infinite;
+        //animation-fill-mode: forwards;
+        
+    }
+    .leg_l {
+        animation-name: leg_l;
+    }
+    .leg_r {
+        animation-name: leg_r;
+    }
+}
+
+@keyframes move1 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(560px, 0px);
+    }
+    100% {
+        transform: translate(560px, 0px);
+        opacity: 0;
+    }
+}
+@keyframes move2 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(560px, 0px);
+    }
+    100% {
+        transform: translate(560px, 115px);
+    }
+}
+@keyframes leg_l {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+@keyframes leg_r {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
