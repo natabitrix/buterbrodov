@@ -35,5 +35,13 @@
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natabitrix/jonas_catalog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/natabitrix/jonas_catalog/issues"
+  },
+  "homepage": "https://github.com/natabitrix/jonas_catalog#readme",
   "description": ""
 }
