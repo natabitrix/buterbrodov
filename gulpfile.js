@@ -1,4 +1,5 @@
 //GIT: Создать репозиторий на гите; F1 > clone > вставить скопированную ссылку из созданого репа > выбрать текущую папку
+//GIT: git branch -M main
 //1. npm init
 //2. npm install
 //3. npm i -D webp-converter@2.2.3
