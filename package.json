@@ -1,5 +1,5 @@
 {
-  "name": "jonas_new_catalog",
+  "name": "buterbrodov",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "type": "module",
@@ -29,7 +29,7 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-util": "^3.0.8",
     "gulp-version-number": "^0.2.4",
-    "jquery": "^3.6.1",
+    "jquery": "^3.7.0",
     "sass": "^1.54.9",
     "webp-converter": "^2.2.3",
     "webpack": "^5.74.0",
@@ -43,5 +43,12 @@
     "url": "https://github.com/natabitrix/jonas_catalog/issues"
   },
   "homepage": "https://github.com/natabitrix/jonas_catalog#readme",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "popper.js": "^1.16.1",
+    "simple-scrollbar": "^0.4.0",
+    "sticky-sidebar": "^3.3.1",
+    "swiper": "^9.3.2"
+  },
   "description": ""
 }
