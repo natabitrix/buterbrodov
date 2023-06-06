@@ -2051,6 +2051,10 @@ p {
   text-align: left !important;
 }
 
+pre {
+  text-align: left !important;
+}
+
 .list-unstyled {
   margin: 0;
   padding: 0;
