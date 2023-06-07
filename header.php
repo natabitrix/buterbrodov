@@ -152,9 +152,9 @@ $ERROR_404 = defined('ERROR_404') && ERROR_404=="Y" ? "Y" : "N";
 
 				<div class="header__categories">
 					<div class="h2">
-						<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/header/sections_name.php", Array(), Array(
+						<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/header/categories_title.php", Array(), Array(
 							"MODE"      => "html",
-							"NAME"      => "sections name",
+							"NAME"      => "categories title",
 							"TEMPLATE"  => "text_include_template.php"
 						));?>
 					</div>
@@ -213,7 +213,7 @@ $ERROR_404 = defined('ERROR_404') && ERROR_404=="Y" ? "Y" : "N";
 
 		<?if($homePage):?>
 			<div class="parallax">
-			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/home_page_content.php", Array(), Array(
+			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/home_page/home_page_content.php", Array(), Array(
 				"MODE"      => "html",
 				"NAME"      => "",
 				"TEMPLATE"  => "text_include_template.php"

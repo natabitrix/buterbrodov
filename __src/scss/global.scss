@@ -697,6 +697,7 @@ $topHeaderMobileHeight: 70px;
 	&__wrapper {
 		padding-top: 103px;
 		padding-bottom: 170px;
+		position: relative;
 
 		@include media-breakpoint-up(md) {
 			padding-top: 70px;
@@ -1261,6 +1262,7 @@ $topHeaderMobileHeight: 70px;
 		.decor>div {
 			z-index: 1;
 			transform: scale(.5);
+			--hs-translate-ratio: 10;
 
 			@include media-breakpoint-up(sm) {
 				transform: scale(.6);

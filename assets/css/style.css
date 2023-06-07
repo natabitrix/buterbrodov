@@ -3605,6 +3605,7 @@ body.home-page {
 .footer__wrapper {
   padding-top: 103px;
   padding-bottom: 170px;
+  position: relative;
 }
 
 .footer__wrapper::before {
@@ -3979,6 +3980,7 @@ body.home-page {
   -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
           transform: scale(0.5);
+  --hs-translate-ratio: 10;
 }
 
 .home-section__categories .decor-bg > div {
