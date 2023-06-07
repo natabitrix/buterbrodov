@@ -83,11 +83,11 @@ $ERROR_404 = defined('ERROR_404') && ERROR_404=="Y" ? "Y" : "N";
 
 			<?if(!$homePage):?>
 			<div class="header__top-back-button">
-				<a href="index.html" class="btn back-button-catalog">
+				<a href="/" class="btn back-button-catalog">
 					<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/icons/arrow-left.svg" alt="←" class="icon">
 					<span class="d-none d-lg-block">Все бренды</span>
 				</a>
-				<a href="index.html" class="btn back-button-general">
+				<a href="/" class="btn back-button-general">
 					<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/icons/arrow-left.svg" alt="←" class="icon">
 					<span class="d-none d-lg-block">Назад</span>
 				</a>
@@ -109,7 +109,7 @@ $ERROR_404 = defined('ERROR_404') && ERROR_404=="Y" ? "Y" : "N";
 		<header class="header" ss-container>
 
 			<div class="decor">
-				<div class="header__decor-left anim-repeat"  data-hs-="fade " style="--hs-delay: 0ms; --hs-translate-ratio: 10; ">
+				<div class="header__decor-left anim-repeat" data-hs-="fade" style="--hs-delay: 0ms; --hs-translate-ratio: 10; ">
 					<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/home-page/decor-slider.png" alt="">
 				</div>
 

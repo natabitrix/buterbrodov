@@ -1392,7 +1392,7 @@ $topHeaderMobileHeight: 70px;
 		}
 
 		&-bg-decor {
-			&-top-center {
+			&-left1 {
 				top: 37%;
 				left: 36%;
 
@@ -1402,7 +1402,7 @@ $topHeaderMobileHeight: 70px;
 				}
 			}
 
-			&-left1 {
+			&-left2 {
 				top: 38%;
 				left: 13%;
 
@@ -1422,7 +1422,7 @@ $topHeaderMobileHeight: 70px;
 				}
 			}
 
-			&-left2 {
+			&-left3 {
 				top: 63%;
 				left: 7%;
 
@@ -1442,7 +1442,7 @@ $topHeaderMobileHeight: 70px;
 				}
 			}
 
-			&-left3 {
+			&-left4 {
 				top: 80%;
 				left: 12%;
 				transform: scale(1.1);
@@ -1466,7 +1466,7 @@ $topHeaderMobileHeight: 70px;
 				}
 			}
 
-			&-left4 {
+			&-left5 {
 				top: 100%;
 				left: 24%;
 
@@ -1486,6 +1486,57 @@ $topHeaderMobileHeight: 70px;
 				}
 			}
 		}
+
+
+		&-leaf-decor {
+			&-left1 {
+				top: 3%;
+				left: 10%;
+				@include media-breakpoint-up(sm) {
+					// top: 3%;
+					// left: 10%;
+				}
+			}
+			&-left2 {
+				top: 86%;
+				left: 19%;
+
+				@include media-breakpoint-up(sm) {
+					// top: 86%;
+					// left: 19%;
+				}
+			}
+			&-left3 {
+				top: 121%;
+				left: 0%;
+
+				@include media-breakpoint-up(sm) {
+					// top: 121%;
+					// left: 0%;
+	
+				}
+			}
+			&-right1 {
+				top: 3%;
+				right: 16%;
+				@include media-breakpoint-up(sm) {
+					// top: 3%;
+					// right: 16%;
+				}
+			}
+			&-right2 {
+				top: 79%;
+				right: 14%;
+				@include media-breakpoint-up(sm) {
+					// top: 79%;
+					// right: 14%;
+				}
+			}
+		}
+
+
+
+
 
 
 		position: relative;

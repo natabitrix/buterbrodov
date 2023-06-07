@@ -73,58 +73,91 @@
 
 </section>
 
+
+
+
 <section class="home-section home-section__categories parallax__group">
 
-	<div class="decor decor-bg parallax__layer parallax__layer--deep">
-		<div class="decor-cener home-section__categories-bg-decor-top-center"  data-hs="fade" style="--hs-delay: 0ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/decor-bg/syr1.svg" alt="">
-		</div>
-		<div class="decor-left home-section__categories-bg-decor-left1"  data-hs="fade" style="--hs-delay: 200ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/decor-bg/snake.svg" alt="">
-		</div>
-		<div class="decor-right home-section__categories-bg-decor-right1"  data-hs="fade" style="--hs-delay: 200ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/decor-bg/smetana.svg" alt="">
-		</div>
-		<div class="decor-left home-section__categories-bg-decor-left2"  data-hs="fade" style="--hs-delay: 400ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/decor-bg/syr5.svg" alt="">
-		</div>
-		<div class="decor-right home-section__categories-bg-decor-right2"  data-hs="fade" style="--hs-delay: 400ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/decor-bg/kasha.svg" alt="">
-		</div>
-		<div class="decor-left home-section__categories-bg-decor-left3"  data-hs="fade" style="--hs-delay: 600ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/decor-bg/maslo.svg" alt="">
-		</div>
-		<div class="decor-right home-section__categories-bg-decor-right3"  data-hs="fade" style="--hs-delay: 600ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/decor-bg/tvorog.svg" alt="">
-		</div>
-		<div class="decor-left home-section__categories-bg-decor-left4"  data-hs="fade" style="--hs-delay: 800ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/decor-bg/syr2.svg" alt="">
-		</div>
-		<div class="decor-right home-section__categories-bg-decor-right4"  data-hs="fade" style="--hs-delay: 800ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/decor-bg/syr3.svg" alt="">
-		</div>
-	</div>
 
-	<div class="decor parallax__layer parallax__layer--back">
-		<div class="decor-left home-section__categories-decor-left1"  data-hs="fade right" style="--hs-delay: 0ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/home-page/decor-left1.png" alt="">
-		</div>
-		<div class="decor-right home-section__categories-decor-right1"  data-hs="fade left" style="--hs-delay: 300ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/home-page/decor-right1.png" alt="">
-		</div>
-		<div class="decor-left home-section__categories-decor-left2"  data-hs="fade right" style="--hs-delay: 600ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/home-page/decor-left2.png" alt="">
-		</div>
-		<div class="decor-right home-section__categories-decor-right2"  data-hs="fade left" style="--hs-delay: 900ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/home-page/decor-right2.png" alt="">
-		</div>
-		<div class="decor-left home-section__categories-decor-left3"  data-hs="fade right" style="--hs-delay: 1200ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/home-page/decor-left3.png" alt="">
-		</div>
-		<div class="decor-right home-section__categories-decor-right3"  data-hs="fade left" style="--hs-delay: 1500ms; --hs-translate-ratio: 10; ">
-			<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/home-page/decor-right3.png" alt="">
-		</div>
-	</div>
+	<?
+	$HOME_DECOR_IBLOCK_ID = 21;
+	$HOME_DECOR_ELEMENT_ID = 78512;
+	
+	/*
+	CModule::IncludeModule('iblock');
+	$arSelect = Array("ID", "NAME", "PROPERTY_IMAGE_LEFT", "PROPERTY_IMAGE_RIGHT", "PROPERTY_IMAGE_LEFT_BACK", "PROPERTY_IMAGE_RIGHT_BACK", "PROPERTY_IMAGE_LEFT_FORE", "PROPERTY_IMAGE_RIGHT_FORE");
+	$arFilter = Array("IBLOCK_ID"=>IntVal($HOME_DECOR_IBLOCK_ID), "ACTIVE_DATE"=>"Y", "ACTIVE"=>"Y", "ID" => $HOME_DECOR_ELEMENT_ID);
+	$res = CIBlockElement::GetList(Array(), $arFilter, false, false, $arSelect);
+	$arRes = array();
+	while($arFields = $res->GetNext())
+	{
+		$arRes[] = $arFields;
+	}
+	printArr($arRes);
+	*/
+	?>
+	
+	<?$APPLICATION->IncludeComponent("bitrix:news.detail", "home-page_decor", Array(
+		"IBLOCK_ID" => "21",	// Код информационного блока
+			"ELEMENT_ID" => $HOME_DECOR_ELEMENT_ID,	// ID новости
+			"COMPONENT_TEMPLATE" => ".default",
+			"IBLOCK_TYPE" => "buterbrodov",	// Тип информационного блока (используется только для проверки)
+			"ELEMENT_CODE" => "",	// Код новости
+			"CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
+			"FIELD_CODE" => array(	// Поля
+				0 => "",
+				1 => "",
+			),
+			"PROPERTY_CODE" => array(	// Свойства
+				0 => "undefined",
+				1 => "",
+			),
+			"IBLOCK_URL" => "",	// URL страницы просмотра списка элементов (по умолчанию - из настроек инфоблока)
+			"DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+			"AJAX_MODE" => "N",	// Включить режим AJAX
+			"AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
+			"AJAX_OPTION_STYLE" => "N",	// Включить подгрузку стилей
+			"AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
+			"AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
+			"CACHE_TYPE" => "A",	// Тип кеширования
+			"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+			"CACHE_GROUPS" => "N",	// Учитывать права доступа
+			"SET_TITLE" => "N",	// Устанавливать заголовок страницы
+			"SET_CANONICAL_URL" => "N",	// Устанавливать канонический URL
+			"SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
+			"BROWSER_TITLE" => "-",	// Установить заголовок окна браузера из свойства
+			"SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
+			"META_KEYWORDS" => "-",	// Установить ключевые слова страницы из свойства
+			"SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
+			"META_DESCRIPTION" => "-",	// Установить описание страницы из свойства
+			"SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
+			"INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
+			"ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
+			"ADD_ELEMENT_CHAIN" => "N",	// Включать название элемента в цепочку навигации
+			"ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
+			"USE_PERMISSIONS" => "N",	// Использовать дополнительное ограничение доступа
+			"STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа элемента
+			"DISPLAY_DATE" => "N",	// Выводить дату элемента
+			"DISPLAY_NAME" => "N",	// Выводить название элемента
+			"DISPLAY_PICTURE" => "N",	// Выводить детальное изображение
+			"DISPLAY_PREVIEW_TEXT" => "N",	// Выводить текст анонса
+			"USE_SHARE" => "N",	// Отображать панель соц. закладок
+			"PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
+			"DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
+			"DISPLAY_BOTTOM_PAGER" => "N",	// Выводить под списком
+			"PAGER_TITLE" => "Страница",	// Название категорий
+			"PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
+			"PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
+			"SET_STATUS_404" => "N",	// Устанавливать статус 404
+			"SHOW_404" => "N",	// Показ специальной страницы
+			"MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
+		),
+		false
+	);?>
+
+
+
+
 
 
 	<div class="home-section__categories-items-wrapper parallax__layer parallax__layer--base">

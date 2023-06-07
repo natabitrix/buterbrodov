@@ -4020,12 +4020,12 @@ body.home-page {
   right: -14%;
 }
 
-.home-section__categories-bg-decor-top-center {
+.home-section__categories-bg-decor-left1 {
   top: 37%;
   left: 36%;
 }
 
-.home-section__categories-bg-decor-left1 {
+.home-section__categories-bg-decor-left2 {
   top: 38%;
   left: 13%;
 }
@@ -4035,7 +4035,7 @@ body.home-page {
   right: 13%;
 }
 
-.home-section__categories-bg-decor-left2 {
+.home-section__categories-bg-decor-left3 {
   top: 63%;
   left: 7%;
 }
@@ -4045,7 +4045,7 @@ body.home-page {
   right: 1%;
 }
 
-.home-section__categories-bg-decor-left3 {
+.home-section__categories-bg-decor-left4 {
   top: 80%;
   left: 12%;
   -webkit-transform: scale(1.1);
@@ -4061,7 +4061,7 @@ body.home-page {
           transform: scale(1.1);
 }
 
-.home-section__categories-bg-decor-left4 {
+.home-section__categories-bg-decor-left5 {
   top: 100%;
   left: 24%;
 }
@@ -4069,6 +4069,31 @@ body.home-page {
 .home-section__categories-bg-decor-right4 {
   top: 92%;
   right: 19%;
+}
+
+.home-section__categories-leaf-decor-left1 {
+  top: 3%;
+  left: 10%;
+}
+
+.home-section__categories-leaf-decor-left2 {
+  top: 86%;
+  left: 19%;
+}
+
+.home-section__categories-leaf-decor-left3 {
+  top: 121%;
+  left: 0%;
+}
+
+.home-section__categories-leaf-decor-right1 {
+  top: 3%;
+  right: 16%;
+}
+
+.home-section__categories-leaf-decor-right2 {
+  top: 79%;
+  right: 14%;
 }
 
 .home-section__categories-items {
@@ -5679,8 +5704,8 @@ body.home-page {
 }
 
 .parallax__layer--fore {
-  -webkit-transform: translateZ(91px) scale(0.7);
-          transform: translateZ(91px) scale(0.7);
+  -webkit-transform: translateZ(-50px) scale(1.2);
+          transform: translateZ(-50px) scale(1.2);
   z-index: 1;
 }
 
@@ -10019,12 +10044,12 @@ body.home-page {
     top: 93%;
   }
 
-  .home-section__categories-bg-decor-top-center {
+  .home-section__categories-bg-decor-left1 {
     top: -5%;
     left: 46%;
   }
 
-  .home-section__categories-bg-decor-left1 {
+  .home-section__categories-bg-decor-left2 {
     top: 3%;
     left: 21%;
   }
@@ -10034,7 +10059,7 @@ body.home-page {
     right: 22%;
   }
 
-  .home-section__categories-bg-decor-left2 {
+  .home-section__categories-bg-decor-left3 {
     top: 46%;
     left: 17%;
   }
@@ -10044,7 +10069,7 @@ body.home-page {
     right: 12%;
   }
 
-  .home-section__categories-bg-decor-left3 {
+  .home-section__categories-bg-decor-left4 {
     top: 85%;
     left: 20%;
     -webkit-transform: scale(1.3);
@@ -10060,7 +10085,7 @@ body.home-page {
             transform: scale(1.2);
   }
 
-  .home-section__categories-bg-decor-left4 {
+  .home-section__categories-bg-decor-left5 {
     top: 115%;
     left: 30%;
   }
